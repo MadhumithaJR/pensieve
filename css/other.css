@@ -1,0 +1,341 @@
+/* 
+
+Elevate
+
+http://www.templatemo.com/tm-481-elevate
+
+
+Line border color #999 
+
+Title text, menu color #666
+
+Paragraph text color #000
+
+*/
+@font-face {
+    font-family: 'gladis'; /*a name to be used later*/
+    src: url('../Gladis.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Fragmentcore'; /*a name to be used later*/
+    src: url('../Fragmentcore.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'AndreaBellarosa'; /*a name to be used later*/
+    src: url('../AndreaBellarosa.ttf'); /*URL to font*/
+}
+
+a:focus {
+	color: #666;
+	outline: none;
+}
+
+ul { 
+	padding: 0;
+	margin: 0; 
+}
+
+body {
+	background-color: #f2f2f2;
+	background-image: url(../img/bgpic.png);
+	color: #000;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	padding-top: 80px;
+	overflow-x: hidden;
+}
+
+.fab,.fas {
+	margin-top: 2%;
+  margin-right: 3%;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fab:hover,.fas:hover {
+    opacity: 0.7;
+}
+
+footer{
+	background-color: #2B2727;
+	padding-bottom: 15px;
+}
+
+.tm-sidebar {
+	position: fixed;
+	width: 360px;
+}
+
+.tm-main-nav {
+	background-color: white;
+	font-size: 1.6667em;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	text-align: center;
+}
+
+.tm-nav-item {
+	list-style: none;
+	width: 100%;
+	padding: 15px 30px;
+}
+
+.tm-nav-item-link{
+	border: 1px solid rgba(0,0,0,0);
+	color: #666;
+	display: block;
+	padding: 10px;
+	width: 100%;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.tm-nav-item-link.active,
+.tm-nav-item-link:hover {
+	color: #666;
+	text-decoration: none;
+	border: 1px solid #999;
+}
+
+.tm-nav-item-link:focus { text-decoration: none; }
+
+.tm-banner-title, 
+.tm-section-title, 
+.tm-banner-text {
+	color: #666;
+	font-weight: 300;
+	margin-top: 0;
+}
+
+.tm-section-title {	margin-bottom: 20px; 
+display: block;
+font-family: AndreaBellarosa;
+font-size: 3em;}
+
+.tm-section-title-box {	margin-bottom: 0; }
+
+.tm-banner-title { 
+	font-family: gladisregular;
+	font-size: 3.3em;
+	letter-spacing: 2px; 
+}
+
+.tm-main-content {
+	margin-left: 10%;
+	padding-left: 10%;
+}
+
+.tm-content-box {
+	background-color: white;
+	margin-bottom: 30px;
+	-webkit-flex-flow: column;
+		    -ms-flex-flow: column;
+		        flex-flow: column;
+		        text-align: justify;
+		        padding: 5%;
+}
+
+.pad { padding: 50px; }
+
+.tm-banner {
+	height: 300px;
+	padding: 30px;
+}
+	
+.tm-banner-inner {
+	border: 1px solid #999;
+	height: 100%;
+	text-align: center;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+	
+.tm-banner-title { font-family: Gladis; }
+
+.tm-banner-text { font-size: 1.4em; font-family: Fragmentcore; }
+
+.flex-2-col {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+/*http://stackoverflow.com/questions/29562755/flexbox-ie10-width-issues*/
+.flex-item { 
+	-webkit-box-flex: 0 1 auto; 
+	-webkit-flex: 0 1 auto; 
+	    -ms-flex: 0 1 auto; 
+	        flex: 0 1 auto;
+}
+
+
+.tm-section-description {
+	line-height: 1.5;
+	margin-bottom: 25px;
+	display: block;
+	margin:auto;
+}
+
+.eventdate{
+	text-align: center;
+	font-family: Fragmentcore;
+}
+
+.tm-team-description-container { max-width: 80%; }
+
+.tm-footer {
+	color: #666;
+	padding-bottom: 15px;
+}
+
+@media (min-width: 1200px){
+	.container { max-width: 1170px; }
+}
+
+@media screen and (max-width: 1199px) and (min-width: 1140px) {
+	.container { width: 1080px; }
+	.tm-sidebar { width: 300px; }
+	.tm-main-content { margin-left: 300px; }
+	.tm-team-description-container { max-width: 330px; }
+
+}
+
+/*http://stackoverflow.com/questions/11404744/media-queries-max-width-or-max-height*/
+@media screen and (max-width: 1139px), screen and (max-height: 834px) {
+
+	.aboutmepic{
+		float: left;
+	}
+
+	body {	padding-top: 100px;	}
+	
+	.tm-sidebar {
+	    position: fixed;
+	    width: 100%;
+	    top: 0;
+	    left: 0;
+	    z-index: 1000;
+	}
+
+	.tm-sidebar-image { display: none; }
+
+	.tm-main-nav {
+		border-bottom: 1px solid rgba(153, 153, 153, 0.20);
+		font-size: 1.1em;
+		overflow: hidden;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.tm-nav-item {
+		float: left;
+		padding: 10px;
+		width: 25%;
+	}
+
+	.tm-main-content {
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 100%;
+		padding-left: 0;
+	}
+
+	.tm-content-box { 
+		margin-left: 0; 
+
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.tm-team-description-container { max-width: 440px; }
+		.flex-2-col {
+		-webkit-flex-flow: column;
+		    -ms-flex-flow: column;
+		        flex-flow: column;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.form-group-2-col-left,
+	.form-group-2-col-right {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.tm-team-description-container { 
+		max-width: 296px; 
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 991px) and (min-width: 780px) {
+	.container { width: 780px; }	
+		.flex-2-col {
+		-webkit-flex-flow: column;
+		    -ms-flex-flow: column;
+		        flex-flow: column;
+	}
+
+}
+
+@media screen and (max-width: 640px) {
+	body { padding-top: 30px; }
+	.tm-sidebar { display: none; }
+		.flex-2-col {
+		-webkit-flex-flow: column;
+		    -ms-flex-flow: column;
+		        flex-flow: column;
+
+	}
+	.pad{
+		width: 100%;
+	}
+	.tm-team-description-container{
+		width: 90%;
+	}
+
+
+}
+
+@media screen and (max-width: 564px) {
+
+	.tm-banner-title { font-size: 1.9em; }
+	.tm-banner-text { font-size: 1.2em; }
+	
+	.flex-2-col {
+		-webkit-flex-flow: column;
+		    -ms-flex-flow: column;
+		        flex-flow: column;
+	}
+
+	.tm-section-title-box {	font-size: 1.2em; }
+
+	.pad {
+		padding: 30px;
+		width: 100%;
+	}
+
+}
