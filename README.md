@@ -1,5 +1,5 @@
 # Pensieve
-A website displaying my collection of aesthetics and written works - POVs from certain characters in the Harry Potter series.
+A Pensieve, in the Harry Potter Universe, is a rare and powerful magical item used to store and review thoughts and memories. So here we have, my pensieve - a website displaying my collection of aesthetics and written works - POVs from certain characters in the Harry Potter series.
 
 # Technologies Used
   - HTML5
